@@ -1,0 +1,55 @@
+@keyframes loader-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
+.loader,
+.loader-first {
+  display: flex;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1c1624;
+  z-index: 1;
+}
+
+.error-load,
+.loader__circle {
+  margin: auto;
+}
+
+.loader__circle {
+  border-radius: 50%;
+  border: none;
+}
+
+.loader-first,
+.loader-second {
+  animation: loader-animation 20s infinite linear;
+  border-top: 5px solid #502a81;
+}
+
+.loader-first {
+  width: 100px;
+  height: 100px;
+}
+
+.loader-second {
+  width: 80px;
+  height: 80px;
+}
+
+.error-load {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}

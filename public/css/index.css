@@ -1,0 +1,155 @@
+/* +++++++++++++++  HELPERS  +++++++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+}
+
+:root {
+  --border: rgb(219, 81, 27);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: #1c1624;
+}
+
+.hidden {
+  display: none;
+}
+
+.data-3d,
+.header {
+  position: fixed;
+}
+
+.principal-container {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* +++++++++++++++  HEADER  +++++++++++++++ */
+
+.header {
+  width: 100%;
+  padding: 3rem;
+}
+
+.header__title {
+  font-size: 1.5rem;
+}
+
+/* +++++++++++++++  MAIN  +++++++++++++++ */
+
+.main {
+  width: 100%;
+}
+
+/* +++++++++++++++  HOME  +++++++++++++++ */
+
+.section-home {
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-home___title {
+  font-size: 5rem;
+}
+
+.section-home__p-info {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+/* +++++++++++++++  SECTIONS  +++++++++++++++ */
+
+.section {
+  padding: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.section-card {
+  width: 40%;
+  padding: 1rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+/* +++++++++++++++  FIRST  +++++++++++++++ */
+
+/* +++++++++++++++  SECOND  +++++++++++++++ */
+
+.section-two {
+  justify-content: flex-end;
+}
+
+/* +++++++++++++++  MEDIAQUERIES  +++++++++++++++ */
+
+@media (max-width: 800px) {
+  .section {
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.336);
+  }
+
+  .section-card {
+    width: 65%;
+  }
+
+  .section-home___title {
+    font-size: 3.5rem;
+  }
+
+  .section-one,
+  .section-two,
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-home___title {
+    font-size: 2rem;
+  }
+
+  .header__title,
+  .section-home__p-info {
+    font-size: 1.2rem;
+  }
+
+  .section-card {
+    width: 90%;
+  }
+
+  .section,
+  .header {
+    padding: 1.5rem;
+  }
+}

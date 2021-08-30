@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LOADER -->
+    <link rel="stylesheet" href="./css/loader.css" />
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- FONTAWASOME -->
+    <script
+      src="https://kit.fontawesome.com/3f81f9b1b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- NUNITO SANS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./galaxia.svg" sizes="any" type="image/svg+xml">
+    <title>Demo</title>
+  </head>
+  <body>
+    <div class="loader" id="loaderId">
+      <div class="loader__circle loader-first">
+        <div class="loader__circle loader-second"></div>
+      </div>
+    </div>
+    <canvas class="data-3d" id="3d-context"></canvas>
+    <div class="principal-container hidden" id="containerId">
+      <div class="container">
+        <header class="header">
+          <div class="header__logo">
+            <h5 class="header__title" id="btnSoundId">
+              <i class="fas fa-play-circle"></i> Lorem
+            </h5>
+          </div>
+          <audio
+            src="./sounds/halo.mp3"
+            id="soundId"
+            autoplay
+          >
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+        </header>
+
+        <main class="main">
+          <div class="section-home">
+            <div class="section-home__info">
+              <h1 class="section-home___title">Lorem, ipsum dolor.</h1>
+              <p class="section-home__p-info">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <p class="section-home__p-info">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Itaque?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-one section">
+            <div class="section-one__info section-card">
+              <h2 class="section-one__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="section-one__p-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                nobis corporis minus voluptatibus nulla ea!
+              </p>
+              <p class="section-one__p-info">Lorem ipsum dolor sit amet.</p>
+              <p class="section-one__p-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, non earum? Accusantium iure nulla provident nam
+                aliquam. Quasi, consequuntur fugiat!
+              </p>
+            </div>
+          </div>
+
+          <div class="section-two section">
+            <div class="section-two__info section-card">
+              <h2 class="section-one__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="section-two__p-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+                enim.
+              </p>
+              <p class="section-two__p-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                molestias iusto aspernatur ducimus fuga quisquam.
+              </p>
+              <div class="section-two__p-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempora aperiam excepturi aspernatur molestias nobis repellendus
+                voluptatibus exercitationem assumenda, consequuntur odio?
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
